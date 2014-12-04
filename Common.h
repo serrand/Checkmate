@@ -12,6 +12,7 @@
 #include <sstream>
 #include <string>
 #include <assert.h>
+#include <cstdlib>
 
 using namespace std;
 

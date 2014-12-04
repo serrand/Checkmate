@@ -168,7 +168,7 @@ void MoveGenerator::generate_move_lookup_tables(){
             if (file >= 1 && row >= 2) { targets |= 1ULL << (square - 16 - 1); }
             if (file <= 6 && row >= 2) { targets |= 1ULL << (square - 16 + 1); }
             if (file <= 5 && row >= 1) { targets |= 1ULL << (square - 8 + 2); }
-            printf("0x%016llXULL", targets);
+//            cout << ("0x%016llXULL", targets);
             cout << ", ";
             if (file == 3) cout << endl << '\t';
         }
@@ -190,7 +190,7 @@ void MoveGenerator::generate_move_lookup_tables(){
             if(row >= 1) targets |= 1ULL << (square - 8);
             if(file >= 1 && row >= 1) targets |= 1ULL << (square - 9);
             if(file >= 1) targets |= 1ULL << (square - 1);
-            printf("0x%016llXULL", targets);
+            //printf("0x%016llXULL", targets);
             cout << ", ";
             if (file == 3) cout << endl << '\t';
         }
